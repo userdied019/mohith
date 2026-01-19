@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohith | Cybersecurity Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #020617;
+      color: #e5e7eb;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 70px 16px;
+    }
+    h1, h2, h3 {
+      color: #38bdf8;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 16px;
+      background: radial-gradient(circle at top, #020617, #000);
+    }
+    .glow {
+      text-shadow: 0 0 18px #38bdf8;
+    }
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .card {
+      background-color: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 30px rgba(56,189,248,0.5);
+    }
+    .badge {
+      background-color: #1e293b;
+      margin: 4px;
+      font-size: 0.8rem;
+    }
+    .social a {
+      color: #38bdf8;
+      font-size: 1.6rem;
+      margin: 0 10px;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social a:hover {
+      color: #7dd3fc;
+      transform: scale(1.2);
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 40px 16px;
+      color: #94a3b8;
+    }
+    @media (max-width: 576px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.5rem; }
+      .hero p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="animate__animated animate__fadeInDown">
+    <h1 class="display-3 fw-bold glow floating">Mohith</h1>
+    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Cybersecurity Enthusiast | Ethical Hacker | Network Security</p>
+    <p class="animate__animated animate__fadeInUp animate__delay-2s">Mangalagiri • yoursgmail@gmail.com • xxxxxxxxxx</p>
+    <div class="social mt-4 animate__animated animate__fadeInUp animate__delay-3s">
+      <a href="#" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <a href="#about" class="btn btn-outline-info mt-4 animate__animated animate__fadeInUp animate__delay-4s">Explore Portfolio</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container animate__animated animate__fadeInUp">
+  <h2>About Me</h2>
+  <p>
+    Computer Science graduate with hands-on experience in ethical hacking, vulnerability assessment,
+    and network security. Trained on real-world penetration testing methodologies aligned with
+    OWASP Top 10 during my internship at Spypro Security Solutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="container">
+  <h2 class="animate__animated animate__fadeInLeft">Technical Skills</h2>
+  <div class="row g-4 mt-3">
+    <div class="col-md-4 animate__animated animate__zoomIn">
+      <div class="card p-4">
+        <h5>Cybersecurity</h5>
+        <span class="badge">Ethical Hacking</span>
+        <span class="badge">OWASP Top 10</span>
+        <span class="badge">VAPT</span>
+        <span class="badge">Network Security</span>
+      </div>
+    </div>
+    <div class="col-md-4 animate__animated animate__zoomIn">
+      <div class="card p-4">
+        <h5>Programming</h5>
+        <span class="badge">Python</span>
+        <span class="badge">Java</span>
+        <span class="badge">C / C++</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">SQL</span>
+      </div>
+    </div>
+    <div class="col-md-4 animate__animated animate__zoomIn">
+      <div class="card p-4">
+        <h5>Tools & Platforms</h5>
+        <span class="badge">Linux</span>
+        <span class="badge">Git</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">Salesforce</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="container">
+  <h2 class="animate__animated animate__fadeInRight">Experience</h2>
+  <div class="card p-4 mt-3 animate__animated animate__fadeInUp">
+    <h5>Cybersecurity Intern – Spypro Security Solutions</h5>
+    <ul>
+      <li>Performed OWASP-based vulnerability assessments</li>
+      <li>Executed ethical hacking lifecycle</li>
+      <li>Prepared mitigation and security reports</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="container">
+  <h2 class="animate__animated animate__fadeInLeft">Education</h2>
+  <ul class="mt-3">
+    <li>B.Sc. Computer Science – VTJM & IVTR Degree College (2021–2023)</li>
+    <li>M.P.C – Sri Medha V Junior College (2018–2020)</li>
+    <li>S.S.C – Praksham Convent High School (2015–2016)</li>
+  </ul>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="container">
+  <h2 class="animate__animated animate__fadeInUp">Certifications</h2>
+  <ul>
+    <li>Cybersecurity Internship – Spypro Security Solutions</li>
+    <li>Salesforce Superbadges – Security Specialist</li>
+    <li>Vezen Care Program – Technical Development</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Mohith | Cybersecurity Portfolio</p>
+  <a href="Mohith.pdf" download class="btn btn-outline-info mt-2">
+    Download Resume
+  </a>
+</footer>
+
+</body>
+</html>
